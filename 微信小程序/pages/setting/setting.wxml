@@ -1,0 +1,28 @@
+<view class="container">
+	<text id="text1">定时时间：{{ah}}：{{am}} </text><button id="btn4"  bindtap="send4"> 状态:{{status}}</button>
+<view class="naozhong">
+<text id="text">输入新闹钟时间：</text>
+<input maxlength="10" id="input" placeholder="时" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change1"/>
+  <input maxlength="10" id="input" placeholder="分" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change2"/>
+  </view>
+    <button id="btn3" style="opacity: {{opacity}}" 
+disabled="{{disabled}}" bindtap="send5">发送请求</button>
+
+
+
+
+	<view class="section panel">
+	  <view class="section_title">
+	  	<switch class="section_check" type="checkbox" size="mini" checked bindchange="switch1Change"/>
+	  	<text>启用铃声</text>
+	  </view>
+
+	</view>
+
+</view>
